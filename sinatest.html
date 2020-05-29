@@ -1,0 +1,806 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>历史交易_期货_财经纵横_新浪网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" href="/q//view/css/futures_history.css" type="text/css" media="all"  />
+<script type="text/javascript" src="/q//view/js/futures_history.js"></script>
+<script type="text/javascript" src="http://finance.sina.com.cn/iframe/futures_info_cff.js"></script>
+<script type="text/javascript" src="http://i3.sinaimg.cn/cj/HKstock2007/IO.Script_1_0_1.js"></script>
+<script type="text/javascript" src="http://finance.sina.com.cn/iframe/futures_jigou.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+//热门期货
+VisitedStocksTable._hotStockList = ['CU1103','AL1103','AU1106','ZN1103','C1109','A1109','M1109','SR1109','Y1109'];
+//]]>
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+</head>
+
+<body>
+<div class="wrap">
+<!-- 标准二级导航_期货 begin -->
+<style type="text/css">
+.secondaryHeader{height:33px;overflow:hidden;background:url(http://i2.sinaimg.cn/dy/images/header/2008/standardl2nav_bg.gif) repeat-x #fff;color:#000;font-size:12px;font-weight:100;}
+.secondaryHeader a,.secondaryHeader a:visited{color:#000;text-decoration:none;}
+.secondaryHeader a:hover,.secondaryHeader a:active{color:#c00;text-decoration:underline;}
+.sHBorder{border:1px #e3e3e3 solid;padding:0 10px 0 12px;overflow:hidden;zoom:1;}
+.sHLogo{float:left;height:31px;line-height:31px;overflow:hidden;}
+.sHLogo span,.sHLogo span a,.sHLogo span a:link,.sHLogo span a:visited,.sHLogo span a:hover{display:block;*float:left;display:table-cell;vertical-align:middle;*display:block;*font-size:27px;*font-family:Arial;height:31px;}
+.sHLogo span,.sHLogo span a img,.sHLogo span a:link img,.sHLogo span a:visited img,.sHLogo span a:hover img{vertical-align:middle;}
+.sHLinks{float:right;line-height:31px;}
+#level2headerborder{background:#fff; height:5px; overflow:hidden; clear:both; width:950px;}
+</style>
+<div id="level2headerborder"></div>
+<div class="secondaryHeader">
+	<div class="sHBorder">
+		<div class="sHLogo"><span><a href="http://www.sina.com.cn/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_sina_new.gif" alt="新浪网" border="0"/></a><a href="http://finance.sina.com.cn/futuremarket/"><img src="http://i1.sinaimg.cn/dy/images/header/2009/standardl2nav_fin_qihuo.gif" alt="新浪财经-期货" border="0" /></a></span></div>
+		<div class="sHLinks"><a href="http://finance.sina.com.cn/">财经首页</a>&nbsp;|&nbsp;<a href="http://www.sina.com.cn/">新浪首页</a>&nbsp;|&nbsp;<a href="http://news.sina.com.cn/guide/">新浪导航</a></div>
+	</div>
+</div>
+<div id="level2headerborder"></div>
+
+<!-- 标准二级导航_期货 end -->
+
+
+<div class="navRow" id="nav"></div>
+
+<div class="middleSection">
+<div class="leftColumn">
+		<div class="recentVisit">
+			<div class="header">
+				<span>最近访问期货</span>
+			</div>
+			<div class="content" id="visited_futures_tbl">
+
+				<div class="loading"></div>
+			</div>
+		</div>
+
+
+		<div class="navLeft">
+			<dl class="hold_src">
+				<dt><span>国内各品种持仓查询</span></dt>
+				<dd>
+					<table>
+
+					<tbody>
+						<tr>
+							<th><select id="hold_sel1"><option>交易所</option></select></th>
+							<th><select id="hold_sel2"><option>合约</option></select></th>
+						</tr>
+						<tr>
+							<td><input type="text" value="" id="hold_calendar"/></td>
+							<td><input type="button" value="持仓分析" id="btn_hold" /></td>
+
+						</tr>
+						<tr>
+							<th id="build_sel1_wrap"></th>
+							<th id="build_sel2_wrap"></th>
+						</tr>
+						<tr>
+							<th><select id="build_sel3"><option>机构</option></select></th>
+							<th><input type="button" value="建仓过程" id="btn_build" /></th>
+
+						</tr>
+					</tbody>
+					</table>
+				</dd>
+			</dl>
+		</div>
+
+
+		<div id="navLeft" class="navLeft">
+			<dl class="noLineAndVisited">
+				<dt><span>期货品种</span></dt>
+				<dd>
+					<table>
+					<tbody>
+						<tr>
+							<td style="width: 50%;">·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=19">黄金</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=5">铜</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=1">铝</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=17">锌</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=4">天胶</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=13">燃油</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=3">强麦</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=6">硬麦</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=7">一棉</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=15">白糖</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=16">PTA</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=8">豆一</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=10">豆二</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=9">豆粕</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=12">玉米</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=14">豆油</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=18">菜籽油</a></td>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=2">塑料</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=0">棕榈油</a></th>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=21">螺钢</a></td>
+						</tr>
+						<tr>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=22">线材</a></th>
+							<td>·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=23">籼稻</a></th>
+						</tr>
+						<tr>
+							<th colspan="2">·<a target="_blank" href="http://biz.finance.sina.com.cn/hq/index.php?page=futures_list.php?type=24">PVC</a></th>
+						</tr>
+					</tbody>
+					</table>
+				</dd>
+			</dl>
+
+			<dl class="noLineAndVisited">
+				<dt><span>期货工具箱</span></dt>
+				<dd>
+					<table>
+					<tbody>
+						<!--
+						<tr>
+							<td>·<a href="http://finance.sina.com.cn/futuremarket/calc/zlrj.shtml" target="_blank">重量容积换算</a></td>
+						</tr>
+						<tr>
+							<td>·<a href="http://finance.sina.com.cn/futuremarket/calc/incomehs.shtml" target="_blank">进口成本换算</a></td>
+						</tr>
+						<tr>
+							<td>·<a href="http://finance.sina.com.cn/futuremarket/calc/pricehs.shtml" target="_blank">价格容积换算</a></td>
+						</tr>
+						<tr>
+							<td>·<a href="http://finance.sina.com.cn/futuremarket/calc/lengthhs.shtml" target="_blank">长度换算</a></td>
+						</tr>
+						<tr>
+							<th>·<a href="http://finance.sina.com.cn/futuremarket/calc/dchs.shtml" target="_blank">单产换算</a></td>
+						</tr>
+						-->
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?0">豆类期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?1">金属期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?2">原油期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?3">棉花期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?4">玉米期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?5">小麦期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?6">橡胶期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?7">白糖期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?8">PTA期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?9">棕榈油期货工具换算</a>
+						</th></tr>
+						<tr>
+							<th>·<a target="_blank" href="http://finance.sina.com.cn/money/future/futuretool.html?10">黄金期货工具换算</a>
+						</th></tr>
+					</tbody>
+					</table>
+				</dd>
+			</dl>
+
+		</div>
+
+	</div><script type="text/javascript" src="http://www.sinaimg.cn/cj/financewidget/js/Calendar_1.0.1.js"></script>
+<script type="text/javascript" src="http://finance.sina.com.cn/futures/quotes/iframe/js/futures_symbol_js.js"></script><SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+//------------------------------------------------------------------------------
+// FutureSearch begin
+//------------------------------------------------------------------------------
+var FutureSearch2 = {
+	url: "",
+	d_JYS:0,
+	d_PZ:0,
+	d_HY:0,
+	Init: function (jys, pz, hy,type) {
+		this.d_JYS = jys;
+		this.d_PZ = pz;
+		this.d_HY = hy;
+		this.type = type;
+		this.JYSsel = $("selJYS");
+		this.PZSsel = $("selPZ");
+		this.HYSsel = $("selHY");
+		this.SDate = $("id_start_date");
+		this.EDate = $("id_end_date");
+		this.ButtonS = $("btnSearch");
+		this.Futures = $("futuresname");
+		if(this.type == "global"){
+			this.HYSsel.style.display = "none";
+		};
+		var calendar1 = new Calendar("id_start_date", false, false, [140, 800, 0.95, "solid", "#EEE", "#FFF", 3, 3, 0.2, "#000", "#444", "#F6F8FD", "#333", "#F1F5FC", "#000", "#EFF3FB", false, false]);
+		var calendar2 = new Calendar("id_end_date", false, false, [140, 800, 0.95, "solid", "#EEE", "#FFF", 3, 3, 0.2, "#000", "#444", "#F6F8FD", "#333", "#F1F5FC", "#000", "#EFF3FB", false, false]);
+
+		this.JYSsel.onchange = this.changeJYS.Bind(this);
+		this.PZSsel.onchange = this.changePZ.Bind(this);
+		this.ButtonS.onclick = this.toResult.Bind(this);
+
+		this.fillBylist(this.JYSsel, jys_data.jys, this.d_JYS, 'jys');
+		this.fillBylist(this.PZSsel, jys_data.pz[this.d_JYS], this.d_PZ, 'pz');
+		if(this.type !== "global"){
+			this.fillBylist(this.HYSsel, jys_data.hy[this.d_PZ], this.d_HY, "hy");
+		};
+		//设置默认
+		if (this.d_JYS != 0)
+		{
+			//this.setDefault (this.JYSsel, jys_data.jys, this.d_JYS);
+			this.changeJYS();
+			//写选中的期货名字
+			this.Futures.innerHTML = this.type !== "global" ? jys_data.hy[this.d_PZ][this.d_HY] : jys_data.pz[this.d_JYS][this.d_PZ];
+		}
+	},
+	fillByArr: function (obj, items, m) {
+		obj.innerHTML = "";
+		for (var i = 0; i < items.length; i++) {
+			obj.options[i] = new Option(items[i][0]);
+			if (m != 'undefined' && i == m)
+			{
+				obj.options[i].selected = true;
+			}
+		};
+	},
+	fillBylist: function (obj, items, m, type) {
+		var arr = [type == "jys" ? '<option value="0">交易所</option>' : ''];
+		for(var key in items){
+			arr.push(["<option ",m == key ? "selected" : ""," value='",key,"'>",items[key],"</option>"].join(""));
+		};
+		obj.innerHTML = arr.join("");
+	},
+	changeJYS: function () {
+		var nIndex = this.JYSsel.selectedIndex,
+			val = this.JYSsel.options[nIndex].value;
+		if(val * 1 != 0){
+			this.fillBylist(this.PZSsel, jys_data.pz[val], this.d_PZ, "pz");
+			this.changePZ();
+		}else{
+			this.PZSsel.innerHTML = '<option value="0">品种</option>';
+			this.HYSsel.innerHTML = '<option value="0">合约</option>';
+		}
+	},
+	changePZ: function () {
+		var nIndex = this.PZSsel.selectedIndex,
+			val = this.PZSsel.options[nIndex].value;
+		if(val * 1 != 0){
+			if(this.type !== "global"){
+				this.fillBylist(this.HYSsel, jys_data.hy[val], this.d_HY, "hy");
+			}
+		};
+	},
+	setDefault: function (obj,items, m)
+	{
+		for(var key in items){
+			for(var i=0,len = obj.options.length;i<len;i++){
+				if (key == m)
+				{
+					obj.options[i].selected = true;
+				}
+			}
+		};
+	},
+	
+	toResult: function () {
+		var pattern = /^(\d{4})(-)(\d{2})(-)(\d{2})$/; 
+		var nIndex1 = this.JYSsel.selectedIndex,
+			nIndex2 = this.PZSsel.selectedIndex, 
+			nIndex3 = this.HYSsel.selectedIndex,
+			jys =  this.JYSsel.options[nIndex1].value,
+			pz =  this.PZSsel.options[nIndex2].value,
+			hy = this.type !== "global" ? this.HYSsel.options[nIndex3].value : "",
+			breed = this.type !== "global" ? this.HYSsel.options[nIndex3].value : pz;
+		var startDate = this.SDate.value;
+		var endDate = this.EDate.value;
+		if (nIndex1 == 0) {
+			alert("请选择期货!");
+			return ;
+		}
+		if (startDate != '' && startDate.match(pattern) == null)
+		{
+			alert("请输入正确的开始日期格式 YYYY-MM-DD");
+			return;
+		}
+		if (endDate != '' && endDate.match(pattern) == null)
+		{
+			alert("请输入正确的结束日期格式 YYYY-MM-DD");
+			return;
+		}
+		if (startDate != '' && endDate !='' && !compareDate(endDate, startDate))
+		{
+			alert("结束日期应该大于开始日期");
+			return;
+		}
+		window.location = "?jys="+jys+"&pz="+pz+"&hy="+hy+"&breed="+breed+"&type=" + this.type + "&start="+this.SDate.value+"&end="+this.EDate.value;
+	}
+}
+//比较日期大小
+function compareDate(DateOne,DateTwo)
+{
+	var OneMonth = DateOne.substring(5,DateOne.lastIndexOf ("-"));
+	var OneDay = DateOne.substring(DateOne.length,DateOne.lastIndexOf ("-")+1);
+	var OneYear = DateOne.substring(0,DateOne.indexOf ("-"));
+
+	var TwoMonth = DateTwo.substring(5,DateTwo.lastIndexOf ("-"));
+	var TwoDay = DateTwo.substring(DateTwo.length,DateTwo.lastIndexOf ("-")+1);
+	var TwoYear = DateTwo.substring(0,DateTwo.indexOf ("-"));
+
+	if (Date.parse(OneMonth+"/"+OneDay+"/"+OneYear) > Date.parse(TwoMonth+"/"+TwoDay+"/"+TwoYear))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	} 
+}
+
+function goto_page(page_num,page_count, comm_str)
+{
+	if(isDigit(page_num) == true)
+	{
+		if(page_num >= 1 && page_num <= page_count)
+		{
+			window.location = "/q//view/vFutures_History.php?page=" + page_num + "&" + comm_str;
+			return false;
+		}
+		else if(page_num < 1)
+		{//输入小于首页页号则跳到首页
+			window.location = "/q//view/vFutures_History.php?page=1&"+comm_str;
+			return false;
+		}
+		else if(page_num > page_count)
+		{//大于尾页则跳转到尾页
+			window.location = "/q//view/vFutures_History.php?page=" + page_count + "&" + comm_str;
+			return false;
+		}
+		else
+		{//输入小于首页页号则跳到首页
+			window.location = "/q//view/vFutures_History.php?page=1&"+comm_str;
+			return false;
+		}
+	}
+	else
+	{
+		window.location = "/q//view/vFutures_History.php?page=1&"+comm_str;
+		return false;
+	}
+}
+function isDigit(s)  
+{  
+	var patrn=/^[0-9]{1,3}$/;  
+	if (!patrn.exec(s)) return false;
+	return true ;
+}  
+
+//-->
+</SCRIPT>
+	<div class="centerColumn">
+		<div class="fundSearch">
+			<div>
+				<span><select id="selJYS" style="width:63px;"><option>交易所</option></select></span>
+				<span><select id="selPZ" style="width:63px;"><option>品种</option></select></span>
+				<span><select id="selHY" style="width:75px;"><option>合约</option></select></span>
+				<span><input type="text" id="id_start_date" name="s_date" value="2013-06-05" /></span>
+				<span>至</span>
+				<span><input type="text" id="id_end_date" name="e_date" value="2020-05-29" /></span>
+				<span><input id="btnSearch" type="button" value="搜索"/></span>
+			</div>
+		</div>
+
+		<div class="historyList">
+						<table>
+			  <thead>
+					<tr class='title'>
+						<th colspan="7"><span id='futuresname'>大豆1109</span><span>(<A HREF="https://finance.sina.com.cn/futures/quotes/AG0.shtml" target="_blank">AG0</A>)历史交易</span></th>
+					</tr>
+			  </thead>
+			  <tr>
+					<td><div align="center"><strong>日期</strong></div></td>
+					<td><div align="center"><strong>收盘价</strong></div></td>
+					<td><div align="center"><strong>开盘价</strong></div></td>
+					<td><div align="center"><strong>最高价</strong></div></td>
+					<td><div align="center"><strong>最低价</strong></div></td>
+					<td class="tdr"><div align="center"><strong>成交量</strong></div></td>
+				  </tr>
+									  <tr class="tr_2">
+						<td><div align="center">2020-05-28</div></td>
+						<td><div align="center">4291.000</div></td>
+						<td><div align="center">4185.000</div></td>
+						<td><div align="center">4310.000</div></td>
+						<td><div align="center">4148.000</div></td>
+						<td class="tdr"><div align="center">1419770</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-27</div></td>
+						<td><div align="center">4225.000</div></td>
+						<td><div align="center">4284.000</div></td>
+						<td><div align="center">4310.000</div></td>
+						<td><div align="center">4194.000</div></td>
+						<td class="tdr"><div align="center">1172064</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-26</div></td>
+						<td><div align="center">4288.000</div></td>
+						<td><div align="center">4195.000</div></td>
+						<td><div align="center">4319.000</div></td>
+						<td><div align="center">4180.000</div></td>
+						<td class="tdr"><div align="center">1012424</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-25</div></td>
+						<td><div align="center">4167.000</div></td>
+						<td><div align="center">4198.000</div></td>
+						<td><div align="center">4250.000</div></td>
+						<td><div align="center">4153.000</div></td>
+						<td class="tdr"><div align="center">1122137</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-22</div></td>
+						<td><div align="center">4150.000</div></td>
+						<td><div align="center">4226.000</div></td>
+						<td><div align="center">4247.000</div></td>
+						<td><div align="center">4100.000</div></td>
+						<td class="tdr"><div align="center">1314484</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-21</div></td>
+						<td><div align="center">4214.000</div></td>
+						<td><div align="center">4289.000</div></td>
+						<td><div align="center">4326.000</div></td>
+						<td><div align="center">4190.000</div></td>
+						<td class="tdr"><div align="center">965581</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-20</div></td>
+						<td><div align="center">4329.000</div></td>
+						<td><div align="center">4203.000</div></td>
+						<td><div align="center">4346.000</div></td>
+						<td><div align="center">4195.000</div></td>
+						<td class="tdr"><div align="center">1109965</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-19</div></td>
+						<td><div align="center">4190.000</div></td>
+						<td><div align="center">4243.000</div></td>
+						<td><div align="center">4261.000</div></td>
+						<td><div align="center">4138.000</div></td>
+						<td class="tdr"><div align="center">937585</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-18</div></td>
+						<td><div align="center">4248.000</div></td>
+						<td><div align="center">4090.000</div></td>
+						<td><div align="center">4248.000</div></td>
+						<td><div align="center">4030.000</div></td>
+						<td class="tdr"><div align="center">708216</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-15</div></td>
+						<td><div align="center">4005.000</div></td>
+						<td><div align="center">3825.000</div></td>
+						<td><div align="center">4034.000</div></td>
+						<td><div align="center">3811.000</div></td>
+						<td class="tdr"><div align="center">622050</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-14</div></td>
+						<td><div align="center">3831.000</div></td>
+						<td><div align="center">3843.000</div></td>
+						<td><div align="center">3858.000</div></td>
+						<td><div align="center">3775.000</div></td>
+						<td class="tdr"><div align="center">266206</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-13</div></td>
+						<td><div align="center">3821.000</div></td>
+						<td><div align="center">3811.000</div></td>
+						<td><div align="center">3844.000</div></td>
+						<td><div align="center">3789.000</div></td>
+						<td class="tdr"><div align="center">228065</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-12</div></td>
+						<td><div align="center">3795.000</div></td>
+						<td><div align="center">3811.000</div></td>
+						<td><div align="center">3831.000</div></td>
+						<td><div align="center">3771.000</div></td>
+						<td class="tdr"><div align="center">198351</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-11</div></td>
+						<td><div align="center">3818.000</div></td>
+						<td><div align="center">3800.000</div></td>
+						<td><div align="center">3852.000</div></td>
+						<td><div align="center">3501.000</div></td>
+						<td class="tdr"><div align="center">309218</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-08</div></td>
+						<td><div align="center">3814.000</div></td>
+						<td><div align="center">3703.000</div></td>
+						<td><div align="center">3832.000</div></td>
+						<td><div align="center">3700.000</div></td>
+						<td class="tdr"><div align="center">277038</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-05-07</div></td>
+						<td><div align="center">3652.000</div></td>
+						<td><div align="center">3660.000</div></td>
+						<td><div align="center">3668.000</div></td>
+						<td><div align="center">3637.000</div></td>
+						<td class="tdr"><div align="center">281552</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-05-06</div></td>
+						<td><div align="center">3672.000</div></td>
+						<td><div align="center">3606.000</div></td>
+						<td><div align="center">3695.000</div></td>
+						<td><div align="center">3590.000</div></td>
+						<td class="tdr"><div align="center">172640</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-30</div></td>
+						<td><div align="center">3696.000</div></td>
+						<td><div align="center">3675.000</div></td>
+						<td><div align="center">3708.000</div></td>
+						<td><div align="center">3646.000</div></td>
+						<td class="tdr"><div align="center">199311</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-29</div></td>
+						<td><div align="center">3664.000</div></td>
+						<td><div align="center">3658.000</div></td>
+						<td><div align="center">3679.000</div></td>
+						<td><div align="center">3633.000</div></td>
+						<td class="tdr"><div align="center">172742</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-28</div></td>
+						<td><div align="center">3600.000</div></td>
+						<td><div align="center">3681.000</div></td>
+						<td><div align="center">3681.000</div></td>
+						<td><div align="center">3584.000</div></td>
+						<td class="tdr"><div align="center">288319</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-27</div></td>
+						<td><div align="center">3674.000</div></td>
+						<td><div align="center">3709.000</div></td>
+						<td><div align="center">3736.000</div></td>
+						<td><div align="center">3666.000</div></td>
+						<td class="tdr"><div align="center">225001</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-24</div></td>
+						<td><div align="center">3713.000</div></td>
+						<td><div align="center">3666.000</div></td>
+						<td><div align="center">3723.000</div></td>
+						<td><div align="center">3661.000</div></td>
+						<td class="tdr"><div align="center">226637</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-23</div></td>
+						<td><div align="center">3699.000</div></td>
+						<td><div align="center">3635.000</div></td>
+						<td><div align="center">3729.000</div></td>
+						<td><div align="center">3608.000</div></td>
+						<td class="tdr"><div align="center">369846</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-22</div></td>
+						<td><div align="center">3549.000</div></td>
+						<td><div align="center">3633.000</div></td>
+						<td><div align="center">3635.000</div></td>
+						<td><div align="center">3533.000</div></td>
+						<td class="tdr"><div align="center">402575</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-21</div></td>
+						<td><div align="center">3698.000</div></td>
+						<td><div align="center">3680.000</div></td>
+						<td><div align="center">3727.000</div></td>
+						<td><div align="center">3664.000</div></td>
+						<td class="tdr"><div align="center">308053</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-20</div></td>
+						<td><div align="center">3677.000</div></td>
+						<td><div align="center">3640.000</div></td>
+						<td><div align="center">3704.000</div></td>
+						<td><div align="center">3615.000</div></td>
+						<td class="tdr"><div align="center">314632</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-17</div></td>
+						<td><div align="center">3681.000</div></td>
+						<td><div align="center">3764.000</div></td>
+						<td><div align="center">3768.000</div></td>
+						<td><div align="center">3624.000</div></td>
+						<td class="tdr"><div align="center">422961</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-16</div></td>
+						<td><div align="center">3778.000</div></td>
+						<td><div align="center">3714.000</div></td>
+						<td><div align="center">3787.000</div></td>
+						<td><div align="center">3683.000</div></td>
+						<td class="tdr"><div align="center">294576</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-15</div></td>
+						<td><div align="center">3708.000</div></td>
+						<td><div align="center">3791.000</div></td>
+						<td><div align="center">3832.000</div></td>
+						<td><div align="center">3700.000</div></td>
+						<td class="tdr"><div align="center">304886</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-14</div></td>
+						<td><div align="center">3778.000</div></td>
+						<td><div align="center">3726.000</div></td>
+						<td><div align="center">3818.000</div></td>
+						<td><div align="center">3715.000</div></td>
+						<td class="tdr"><div align="center">345876</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-13</div></td>
+						<td><div align="center">3705.000</div></td>
+						<td><div align="center">3737.000</div></td>
+						<td><div align="center">3754.000</div></td>
+						<td><div align="center">3637.000</div></td>
+						<td class="tdr"><div align="center">349931</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-10</div></td>
+						<td><div align="center">3727.000</div></td>
+						<td><div align="center">3773.000</div></td>
+						<td><div align="center">3780.000</div></td>
+						<td><div align="center">3723.000</div></td>
+						<td class="tdr"><div align="center">153379</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-09</div></td>
+						<td><div align="center">3700.000</div></td>
+						<td><div align="center">3699.000</div></td>
+						<td><div align="center">3706.000</div></td>
+						<td><div align="center">3673.000</div></td>
+						<td class="tdr"><div align="center">167663</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-08</div></td>
+						<td><div align="center">3690.000</div></td>
+						<td><div align="center">3662.000</div></td>
+						<td><div align="center">3717.000</div></td>
+						<td><div align="center">3643.000</div></td>
+						<td class="tdr"><div align="center">279734</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-07</div></td>
+						<td><div align="center">3764.000</div></td>
+						<td><div align="center">3786.000</div></td>
+						<td><div align="center">3795.000</div></td>
+						<td><div align="center">3704.000</div></td>
+						<td class="tdr"><div align="center">313786</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-03</div></td>
+						<td><div align="center">3553.000</div></td>
+						<td><div align="center">3529.000</div></td>
+						<td><div align="center">3563.000</div></td>
+						<td><div align="center">3512.000</div></td>
+						<td class="tdr"><div align="center">281515</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-04-02</div></td>
+						<td><div align="center">3491.000</div></td>
+						<td><div align="center">3390.000</div></td>
+						<td><div align="center">3498.000</div></td>
+						<td><div align="center">3380.000</div></td>
+						<td class="tdr"><div align="center">309231</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-04-01</div></td>
+						<td><div align="center">3402.000</div></td>
+						<td><div align="center">3415.000</div></td>
+						<td><div align="center">3423.000</div></td>
+						<td><div align="center">3386.000</div></td>
+						<td class="tdr"><div align="center">224870</div></td>
+					  </tr>
+										  <tr class="tr_2">
+						<td><div align="center">2020-03-31</div></td>
+						<td><div align="center">3433.000</div></td>
+						<td><div align="center">3390.000</div></td>
+						<td><div align="center">3444.000</div></td>
+						<td><div align="center">3390.000</div></td>
+						<td class="tdr"><div align="center">283265</div></td>
+					  </tr>
+										  <tr >
+						<td><div align="center">2020-03-30</div></td>
+						<td><div align="center">3364.000</div></td>
+						<td><div align="center">3501.000</div></td>
+						<td><div align="center">3506.000</div></td>
+						<td><div align="center">3343.000</div></td>
+						<td class="tdr"><div align="center">517183</div></td>
+					  </tr>
+						  
+			</table>	
+						<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+								<tr class='tr_1'>
+					<td height="30" align="center" valign="middle" style="color:#009" class="tdr">
+					<!--翻页链接 begin-->
+					当前页面是第1页,共43页&nbsp;第一页|上一页|
+						   <a href="/q//view/vFutures_History.php?page=2&breed=AG0&start=2013-06-05&end=2020-05-29&jys=czce&pz=MA&hy=MA1909&type=inner&name=大豆1109">下一页</a>|
+						   <a href="/q//view/vFutures_History.php?page=43&breed=AG0&start=2013-06-05&end=2020-05-29&jys=czce&pz=MA&hy=MA1909&type=inner&name=大豆1109">尾页</a>&nbsp;<form onsubmit='javascript:goto_page(document.getElementById("page_num").value,43,"breed=AG0&start=2013-06-05&end=2020-05-29&jys=czce&pz=MA&hy=MA1909&type=inner&name=大豆1109");return false' id='page_form' name='page_form' action='' method='GET' ><input type='text' id='page_num' name='page_num' value='请输入跳转的页号' autocomplete='off'  onClick='javascript:if(this.value=="请输入跳转的页号")this.value="";'><input type='button' value='页面跳转' onclick='goto_page(document.getElementById("page_num").value,43,"breed=AG0&start=2013-06-05&end=2020-05-29&jys=czce&pz=MA&hy=MA1909&type=inner&name=大豆1109")'></form>					<!--翻页链接 end-->
+					</td>
+				</tr>
+								<tr class="tr_1">
+					<td height="30" align="right" valign="middle" style="color:#009" class="tdr">↑<a href="#">返回页顶</a>↑</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!--
+	FutureSearch2.Init('czce', 'MA', 'MA1909','inner');
+//-->
+</SCRIPT>
+</div>
+
+</div>
+<script language="JavaScript" type="text/javascript">
+main();
+</script>
+
+
+<!--标准尾开始-->
+<style type="text/css"> #footer{clear:both;}</style>
+<style type="text/css">
+#footer{width:950px; text-align:center; line-height:21px; font-size:12px;margin-top:20px;color:#333;margin-left:auto;margin-right:auto;}
+</style>
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript" src="//www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script> 
+<script type="text/javascript" > 
+_S_pSt(_S_PID_); 
+</script>
+<!-- SUDA_CODE_END --> 
+
+<div id="footer">
+　客户服务热线：4000520066　欢迎批评指正<br>
+<a target="_blank" href="http://tech.sina.com.cn/focus/sinahelp.shtml">常见问题解答</a> 
+ <a target="_blank" href="http://net.china.cn/chinese/index.htm">互联网违法和不良信息举报</a>
+ <a target="_blank" href="https://gu.sina.cn/pc/feedback/">新浪财经意见反馈留言板</a>
+ <br><br><a href="http://corp.sina.com.cn/chn/">新浪简介</a> | <a href="http://corp.sina.com.cn/eng/">About Sina</a> | <a href="http://emarketing.sina.com.cn/">广告服务</a> | <a href="http://www.sina.com.cn/contactus.html">联系我们</a> | <a href="http://corp.sina.com.cn/chn/sina_job.html">招聘信息</a> | <a href="http://www.sina.com.cn/intro/lawfirm.shtml">网站律师</a> | <a href="http://english.sina.com">SINA English</a> | <a href="http://members.sina.com.cn/apply/">通行证注册</a> | <a href="http://help.sina.com.cn/">产品答疑</a><br><br>新浪公司　<a target="_blank" href="http://www.sina.com.cn/intro/copyright.shtml">版权所有</a>
+</div>
+
+<!--标准尾结束-->
+
+
+</body>
+</html>
